@@ -1,5 +1,7 @@
 # MiraculiXplusplus
 
+You should clone this into your armarx folder under the name "MiraculiXplusplus".
+
 Take a look at setupScripts.sh for available aliases.
 To get started, fill out the first line of that file as well, and make sure the second line contains all projects you need.
 Make sure you source the setupScripts file in your .bashrc as well ("source \<path-to-miraculixplusplus\>/setupScripts.sh")
