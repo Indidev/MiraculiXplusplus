@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pushd $ArmarX_DIR/Core/build/bin > /dev/null
+pushd $ArmarX_DIR/ArmarXCore/build/bin > /dev/null
 ./ice-stop.sh
 popd > /dev/null
 
