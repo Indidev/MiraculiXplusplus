@@ -1,4 +1,4 @@
-export ArmarX_DIR="<path-to-armarx>"
+export ArmarX_DIR="/home/indidev/Documents/git/armarx"
 export AX_PROJECTS="ArmarXCore;ArmarXGui;RobotAPI;MemoryX;VisionX;ArmarXSimulation;Spoac;SpeechX;RobotComponents;RobotSkillTemplates;Armar3"
 #uses all cores (incl virtual), but can make the system inresponsive
 #export MAKEFLAGS='-j$(nproc)'
@@ -6,7 +6,7 @@ export AX_PROJECTS="ArmarXCore;ArmarXGui;RobotAPI;MemoryX;VisionX;ArmarXSimulati
 #uses all cores - 1, almost as fast as the above, but system stays responsive
 #NOTE: the below doesn't work as expected; forgot why
 #export MAKEFLAGS='-j$(expr $(nproc) - 1)'
-export MAKEFLAGS='-j7'
+export MAKEFLAGS='-j3'
 
 alias rl="source ~/.bashrc"
 alias geanyclear="rm ~/.config/geany/geany_socket_*"
@@ -45,4 +45,6 @@ alias armarx_tests_enable="cmdall \"cd build;cmake -DARMARX_BUILD_TESTS=ON ..\""
 
 alias armarx_versioncheck_disable="cmdall \"cd build; cmake -DARMARX_ENABLE_DEPENDENCY_VERSION_CHECK=OFF ..\""
 alias armarx_versioncheck_enable="cmdall \"cd build; cmake -DARMARX_ENABLE_DEPENDENCY_VERSION_CHECK=ON ..\""
+
+source $ArmarX_DIR/MiraculiXplusplus/addAutoCompletion.sh
 
