@@ -1,5 +1,5 @@
 export ArmarX_DIR="/home/indidev/Documents/git/armarx"
-export AX_PROJECTS="ArmarXCore;ArmarXGui;RobotAPI;MemoryX;VisionX;ArmarXSimulation;Spoac;SpeechX;RobotComponents;RobotSkillTemplates;Armar3"
+export AX_PROJECTS="ArmarXCore ArmarXGui RobotAPI MemoryX VisionX ArmarXSimulation Spoac SpeechX RobotComponents RobotSkillTemplates Armar3"
 #uses all cores (incl virtual), but can make the system inresponsive
 #export MAKEFLAGS='-j$(nproc)'
 
